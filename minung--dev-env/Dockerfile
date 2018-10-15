@@ -13,6 +13,9 @@ RUN locale-gen ko_KR.UTF-8  && \
     update-locale LANG=ko_KR.UTF-8 && \
     dpkg-reconfigure locales
 
+RUN bash -c 'echo "Asia/Seoul" > /etc/timezone' && \
+    dpkg-reconfigure -f noninteractive tzdata
+
 # git config
 RUN git config --global user.name "minung.han" && git config --global user.email "hmu332233@gmail.com"
 
