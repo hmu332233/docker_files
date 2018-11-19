@@ -3,7 +3,7 @@ MAINTAINER minung.han <hmu332233@gmail.com>
 
 RUN add-apt-repository ppa:git-core/ppa
 RUN apt-get update && \
-    apt-get install -y git vim curl locales language-pack-ko
+    apt-get install -y git git-flow vim curl locales language-pack-ko
 
 # set locale ko_KR
 ENV LANG ko_KR.UTF-8
