@@ -5,6 +5,9 @@ RUN add-apt-repository ppa:git-core/ppa
 RUN apt-get update && \
     apt-get install -y git git-flow vim curl locales language-pack-ko
 
+# install npm package
+RUN npm install -g @hmu332233/minung--dev-tools
+
 # set locale ko_KR
 ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
