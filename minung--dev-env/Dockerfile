@@ -3,7 +3,9 @@ MAINTAINER minung.han <hmu332233@gmail.com>
 
 RUN add-apt-repository ppa:git-core/ppa
 RUN apt-get update && \
-    apt-get install -y git git-flow vim curl locales language-pack-ko
+    apt-get install -y git vim curl locales language-pack-ko
+
+RUN wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 
 # install npm package
 RUN npm install -g @hmu332233/minung--dev-tools
