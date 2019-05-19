@@ -9,6 +9,7 @@ RUN wget --no-check-certificate -q  https://raw.githubusercontent.com/petervande
 
 # install npm package
 RUN npm install -g @hmu332233/minung--dev-tools yarn
+RUN chmod u+x /usr/local/bin/yarn
 
 # set locale ko_KR
 RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
