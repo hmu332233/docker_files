@@ -13,6 +13,7 @@ RUN npm install -g @hmu332233/minung--dev-tools yarn
 # set locale ko_KR
 RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
     echo Asia/Seoul > /etc/timezone
+ENV LC_ALL=C.UTF-8
 
 # git config
 RUN git config --global user.name "minung.han" && git config --global user.email "hmu332233@gmail.com"
