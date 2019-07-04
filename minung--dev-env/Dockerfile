@@ -17,7 +17,7 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && \
 ENV LC_ALL C.UTF-8
 
 # git config
-RUN git config --global user.name "minung.han" && git config --global user.email "hmu332233@gmail.com"
+RUN git config --global user.name "minung.han" && git config --global user.email "hmu332233@gmail.com" &&  git config --global core.eol lf
 
 # remove apt-get list
 RUN rm -rf /var/lib/apt/lists/*
