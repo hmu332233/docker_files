@@ -1,4 +1,4 @@
-FROM resinci/npm-x86_64-ubuntu-node8:latest
+FROM node:12
 MAINTAINER minung.han <hmu332233@gmail.com>
 
 # set locale ko_KR
