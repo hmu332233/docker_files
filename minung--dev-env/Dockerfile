@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
 
 RUN apt-get update && \
-    apt-get install -y libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext 
+    apt-get install -y libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext vim
 
 RUN wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 
