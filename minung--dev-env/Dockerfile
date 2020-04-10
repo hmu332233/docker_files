@@ -16,7 +16,7 @@ RUN wget https://github.com/git/git/archive/v2.18.0.zip -O latestgit.zip; unzip 
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 # install npm package
-RUN npm install -g @hmu332233/minung--dev-tools yarn
+RUN npm install -g @hmu332233/minung--dev-tools
 RUN chmod u+x /usr/local/bin/yarn
 
 # git config
